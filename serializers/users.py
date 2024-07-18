@@ -8,6 +8,7 @@ class NewUserRequest(BaseModel):
     """
     email: str = Field(description="Эл. почта нового пользователя", examples=["example@mail.ex"])
     password: str = Field(description="Пароль нового пользователя", examples=["@goodPassword12345678"])
+    username: str = Field(description="Отображаемое имя пользователя", default=None , examples=["Nick60"])
     name: str = Field(description="Имя нового пользователя" , default=None, examples=["Name"])
     lastname: str = Field(description="Фамилия нового пользователя" , default=None, examples=["Lastname"])
 
