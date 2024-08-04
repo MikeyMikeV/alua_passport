@@ -32,3 +32,6 @@ async def create_user(new_user: users.NewUserRequest, db: Session = Depends(get_
         "success": False,
         "message": "Incorrect email"
     }
+
+# TODO
+# login
